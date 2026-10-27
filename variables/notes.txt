@@ -1,0 +1,9 @@
+* we create a variable and bind a value to it with the `let` keyword. For instance `let x = 5;`
+* in Rust, by default, variables are immutable
+* to make a variable mutable add `mut` in front of the variable
+
+* CONSTANTS are values bound to a name that are not allowed to change
+* instead of using `let` we declare constants with `const`. For instance, `const THREE_HOURS: u32 = 3`
+* the type of the value MUST be declared with a constant.
+* when a constant is write, the compiler pastes that value into every place you use it. For instance, you could assign its
+  value to a mutable variable of the same type later on. The mutable variable get a copy.

@@ -1,0 +1,26 @@
+Terminology ---------------------------------------------------------------------------------------
+prelude - the set of items defined in the standard library that are brought into the scope of every program
+
+
+
+General Notes -------------------------------------------------------------------------------------
+
+Bringing features in the scope of the program - ie. importing
+* In rust, you use the syntax `use library::module`
+
+ io::stdin().read_line() appends text to the current string. it doesn't replace it!
+
+ CARGO NOTES ---------------------------------------------------------------------------------------------
+ Cargo is Rust's build system and package manager
+ To make a new project you run `cargo new new_project`
+ cargo will create a new file in the project directory called `cargo.toml`
+    * cargo.toml  list the name and version of your project. Edition lists the edition of Rust.
+    * It also lists the crates, the project relies upon
+ To build a project to test, use `cargo build`
+ To build and run a project to test use `cargo run`
+ To build for release, use `cargo build --release`
+ After you build the first time cargo makes a Cargo.lock file.
+  * The lock file locks the crates
+  * If you want to update the crates, you can run `cargo update`
+ To add a crate, you can either edit the cargo.toml file, OR
+`cargo add <crate_name>`
